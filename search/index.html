@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Google</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div>
+            <a href="image.html">Image Search</a>
+        </div>
+        <div>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
         <form action="https://google.com/search">
             <input type="text" name="q">
             <input type="submit" value="Google Search">
+        </form>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q">
+            <input type="submit" value="Image Search">
+            <input type="hidden" name="tbm" value="isch">
         </form>
     </body>
 </html>
