@@ -1,0 +1,24 @@
+@import "../search/node_modules/bootstrap/scss/bootstrap.scss";
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);  
+
+%center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+}
+
+#logo {
+  @extend %center;
+  padding-top: 150px;
+}
+#bar {
+  @extend %center;
+  padding-top: 50px;
+}
