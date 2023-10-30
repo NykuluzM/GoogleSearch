@@ -5,13 +5,26 @@ $container-max-widths: (
   lg: 960px,
   xl: 1140px,
   xxl: 1320px
-);  
+); 
 
 %center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   position: center;
+}
+
+%border {
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color:black;
+}
+%border:hover{
+  text-decoration: underline;
 }
 
 #logo {
@@ -21,4 +34,38 @@ $container-max-widths: (
 #bar {
   @extend %center;
   padding-top: 50px;
+}
+
+#hyperLinks {
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+  font-family: serif;
+  font-size: 16px;
+  margin-top: 10px;
+
+  //aLink
+  .aLink{
+    @extend %border;
+  }
+
+
+  //iLink
+  .iLink{
+    @extend %border;
+    
+    .icon-image{
+      padding-bottom: 10px;
+      color: grey;
+      size-adjust: 13px;
+    }
+  }
+
+}
+.rub{
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 4px;
+  font-size: 20px;
+  color: grey;
 }

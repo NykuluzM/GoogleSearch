@@ -11862,12 +11862,48 @@ textarea.form-control-lg {
   position: center;
 }
 
+#hyperLinks .iLink, #hyperLinks .aLink {
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 4px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+}
+
+#hyperLinks .iLink:hover, #hyperLinks .aLink:hover {
+  text-decoration: underline;
+}
+
 #logo {
   padding-top: 150px;
 }
 
 #bar {
   padding-top: 50px;
+}
+
+#hyperLinks {
+  display: flex;
+  justify-content: right;
+  margin-right: 100px;
+  font-family: serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+#hyperLinks .iLink .icon-image {
+  padding-bottom: 10px;
+  color: grey;
+  size-adjust: 13px;
+}
+
+.rub {
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 4px;
+  font-size: 20px;
+  color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */
