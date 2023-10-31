@@ -2,13 +2,35 @@
 <html>
     <head>
         <title>Google Images</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
     </head>
     <body>
         <!-- GOOGLE IMAGES CODE -->
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Image Search">
-            <input type="hidden" name="tbm" value="isch">
+        <form action="https://google.com/search">
+            <div>
+                <img src="assets/logo-images.png" alt="Google logo" class="logo" id="img-logo">
+                <div class="bar col-7">
+                    <div class="input-group">
+                        <input name="q" class="form-control" list="datalistOptions" placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                            <option value="Dragon">
+                            <option value="Panda">
+                            <option value="Power Ranger">
+                            <option value="Hippo">
+                        </datalist>
+                        <input type="hidden" name="tbm" value="isch">
+                        <div class="input-group-addon">
+                            <span class="fa fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; padding-top: 20px;" > 
+                    <button type="submit" class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+            
         </form>
     </body>
-</html>
+</html>               

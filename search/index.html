@@ -7,21 +7,29 @@
     </head>
     <body>
         <div id="hyperLinks">
-            <a class="aLink"; href="advanced.html">Advanced Search</a>
+            <a class="aLink"; href="advanced.html">
+                <i class="bi bi-sliders"></i>
+                Advanced Search
+            </a>
             <a class="iLink"; href="image.html">
                 <i class="bi bi-images icon-image"></i>
                 Images
             </a>
             <i class="bi bi-grid-3x3-gap-fill rub"></i>
-            <button type="button" class="btn btn-primary">Sign Up</button>
+            <a href="https://accounts.google.com/signup/v2/createaccount?continue=https%3A%2F%2Faccounts.google.com%2FManageAccount%3Fnc%3D1&hl=en-GB&biz=false&theme=glif&flowName=GlifWebSignIn&flowEntry=SignUp">
+                <button type="button" class="btn btn-primary">
+                    Sign Up
+                </button>
+            </a>
+            
 
         </div>
     
 
         <form action="https://google.com/search">
             <div>
-                <img src="assets/logo.png" alt="Google logo" id="logo">
-                <div class="col-8" id="bar">
+                <img src="assets/logo.png" alt="Google logo" class="logo">
+                <div class="bar col-8">
                     <input name="q" class="form-control" list="datalistOptions" placeholder="Type to search...">
                     <datalist id="datalistOptions">
                         <option value="One piece is real">
