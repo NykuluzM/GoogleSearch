@@ -34,6 +34,12 @@ $container-max-widths: (
 #img-logo{
   width: 400px;
 }
+.logo-home{
+  width:125px;
+  padding-top: 25px;
+  padding-left: 20px;
+
+}
 .bar{
   @extend %center;
   padding-top: 50px;
@@ -41,7 +47,7 @@ $container-max-widths: (
   padding-bottom: 50px;
 }
 
-#hyperLinks {
+.hyperLinks {
   display: flex;
   justify-content: right;
   margin-right: 100px;
@@ -50,13 +56,13 @@ $container-max-widths: (
   margin-top: 10px;
 
   //aLink
-  .aLink{
+  #aLink{
     @extend %border;
   }
 
 
   //iLink
-  .iLink{
+  #iLink{
     @extend %border;
     
     .icon-image{
@@ -75,10 +81,36 @@ $container-max-widths: (
   color: grey;
 }
 .input-group-addon{
-  color:#ff0000; 
   background-color: #ffffff;
   margin: auto;
   border: 1px  groove;
   border-radius: 10px;
   padding: 10px;
+}
+
+.example{
+  font-size: 11px;
+  font-style:italic;
+}
+#hTitle{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 20px;
+  color:red;
+}
+#submitAdv{
+  @extend %center;
+  margin-top: 20px;
+  
+}
+.labels{
+  padding-top: 5px;
+}
+.hint{
+  font-size: 11px;
+  padding-bottom: 2px;
+}
+.to{
+  text-align: center;
 }

@@ -11855,14 +11855,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.bar, .logo {
+#submitAdv, .bar, .logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   position: center;
 }
 
-#hyperLinks .iLink, #hyperLinks .aLink {
+.hyperLinks #iLink, .hyperLinks #aLink {
   border: solid 2px black;
   border-radius: 10px;
   padding: 4px;
@@ -11872,7 +11872,7 @@ textarea.form-control-lg {
   color: black;
 }
 
-#hyperLinks .iLink:hover, #hyperLinks .aLink:hover {
+.hyperLinks #iLink:hover, .hyperLinks #aLink:hover {
   text-decoration: underline;
 }
 
@@ -11884,13 +11884,19 @@ textarea.form-control-lg {
   width: 400px;
 }
 
+.logo-home {
+  width: 125px;
+  padding-top: 25px;
+  padding-left: 20px;
+}
+
 .bar {
   padding-top: 50px;
   height: 60px;
   padding-bottom: 50px;
 }
 
-#hyperLinks {
+.hyperLinks {
   display: flex;
   justify-content: right;
   margin-right: 100px;
@@ -11898,7 +11904,7 @@ textarea.form-control-lg {
   font-size: 16px;
   margin-top: 10px;
 }
-#hyperLinks .iLink .icon-image {
+.hyperLinks #iLink .icon-image {
   padding-bottom: 10px;
   color: grey;
   size-adjust: 13px;
@@ -11913,12 +11919,41 @@ textarea.form-control-lg {
 }
 
 .input-group-addon {
-  color: #ff0000;
   background-color: #ffffff;
   margin: auto;
   border: 1px groove;
   border-radius: 10px;
   padding: 10px;
+}
+
+.example {
+  font-size: 11px;
+  font-style: italic;
+}
+
+#hTitle {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 70px;
+  margin-right: 20px;
+  color: red;
+}
+
+#submitAdv {
+  margin-top: 20px;
+}
+
+.labels {
+  padding-top: 5px;
+}
+
+.hint {
+  font-size: 11px;
+  padding-bottom: 2px;
+}
+
+.to {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

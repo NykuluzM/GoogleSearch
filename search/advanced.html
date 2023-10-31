@@ -2,12 +2,123 @@
 <html>
     <head>
         <title>Google Advanced Search</title>
-    </head>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <body>
+        
+        <a href="index.html">
+
+            <img class="logo-home"src="assets/logo.png" alt="Google homepage">
+        </a>
+
+    
         <div>
-            <form action="https://www.google.com/advanced_search">
-                
-            </form>
+            
+            <h3 id="hTitle">Advanced Search</h3>
+            <hr>
         </div>
+
+        <div class="container" id="cc">
+           
+             <form action="https://google.com/search" name="f">
+
+                <div class="form-group row gx-2">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="margin-bottom: 15px;">
+                        <label for="field1" class="col-2 text-nowrap">Find pages with...</label>
+                    </div>
+                    <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-6">
+
+                    </div>
+                    <div class="col-6 col-m-10; col-lg-10 col-xl-4 col-xxl-3"
+                    style="margin-bottom: 15px;">
+                        <label for="field1" class="d-none d-xxl-block col-2 text-nowrap">To do this in the search box
+                        </label>
+                    </div>
+
+                </div>
+                <div class="form-group row gx-2 justify-content-center mt-2">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        <label for="field1" class="labels text-nowrap">All these words:</label>
+                    </div>
+                    <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-6">
+                        <input type="text" class="form-control textinput" id="field1" value=""  name="as_q">
+                    </div>
+                    <div class="col-6 col-m-10; col-lg-10 col-xl-4 col-xxl-3">
+                        <label class="hint d-none d-xxl-block text-nowrap" for="field1">Type the important words: 
+                            <span class="example text-nowrap">
+                                tricolor rat terrier
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group row gx-2 justify-content-center mt-3">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        <label for="field2" class="labels text-nowrap">This exact word or phrase:</label>
+                    </div>
+                        <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-6">
+                            <input type="text" class="form-control textinput" id="field2" value=""  name="as_epq">
+                        </div>
+                        <div class="col-6 col-m-10; col-lg-10 col-xl-4 col-xxl-3">
+                            <label class="hint d-none  d-xxl-block text-nowrap" for="field2">Put exact words in quotes:
+                                <span class="example text-nowrap">
+                                    "rat terrier" 
+                                </span>
+                            </label>
+                    </div>
+                </div>
+                <div class="form-group row gx-2 justify-content-center mt-3">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        <label for="field3" class="labels text-nowrap">any of this words:</label>
+                    </div>
+                    <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-6">
+                        <input type="text" class="form-control textinput" id="field3" value=""  name="as_oq">
+                    </div>
+                    <div class="col-6 col-m-10; col-lg-10 col-xl-4 col-xxl-3">
+                            <label class="hint d-none d-xxl-block" for="field3">Type OR between all the words you want:
+                                <span class="example text-nowrap">
+                                    miniature OR standard
+                                </span>
+                            </label>
+                     </div>
+                </div>
+                <div class="form-group row gx-2 justify-content-center mt-3">
+                    <div class="col-6 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        <label for="field4" class="labels text-nowrap">none of this words:</label>
+                    </div>
+                        <div class="col-6 col-sm-7 col-md-8 col-lg-9 col-xl-9 col-xxl-6">
+                            <input type="text" class="form-control textinput" id="field4" value=""  name="as_eq">
+                        </div>
+                        <div class="col-6 col-m-10; col-lg-10 col-xl-4 col-xxl-3">
+                            <label class="hint d-none d-xxl-block" for="field4">Put a minus sign just before words you don't want:
+                            <span class="example text-nowrap">
+                                -rodent, -"Jack Russell"
+
+                            <span</label>
+                    </div>
+                </div>
+                
+                <div class="form-group row row-cols-4 mt-3">
+                    <div class="col-4 col-sm-5 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+                        numbers ranging from: 
+                    </div>
+                    <div class="col-322 col-xxl-2 mx-2">
+                        <input type="text" class="form-control-sm textinput1" id="field5" value=""  name="as_nlo" placeholder="start">
+
+                    </div>
+                
+                    <div class="col-3 col-xxl-3 mx-1">
+                        <input type="text" class="form-control-sm textinput2" id="field5" value=""  name="as_nhi" placeholder="end">
+                    </div>
+
+                    <div class="col-xxl-2">
+                        <label class="hint d-none d-xxl-block" for="field4">in decimal format, provide unit of measure
+                    </div>
+
+                </div>
+    
+            <input class="btn btn-primary"type="submit" value="advanced search" id="submitAdv">
+            </form>
     </body>
 </html>
