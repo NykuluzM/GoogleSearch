@@ -11956,4 +11956,14 @@ textarea.form-control-lg {
   text-align: center;
 }
 
+#btn1 {
+  width: 150px;
+  margin-right: 20px;
+}
+
+#btn2 {
+  width: 150px;
+  margin-left: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
